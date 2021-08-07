@@ -3,6 +3,12 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+.. attention::
+
+   **(August 2021) Streetmix documentation has now moved!** Please update your bookmarks to `<https://docs.streetmix.net/>`_.
+
+--------
+
 .. image:: ../public/images/logo.svg
    :alt: Streetmix
    :class: stmx-logo
