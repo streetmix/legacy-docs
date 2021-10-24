@@ -1,0 +1,266 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Component Tests &mdash; Streetmix  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/css/sphinx_prompt_css.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/css/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../../genindex/" />
+    <link rel="search" title="Search" href="../../../../search/" />
+    <link rel="next" title="API testing" href="../api/" />
+    <link rel="prev" title="Frontend Tests" href="../" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../../" class="icon icon-home"> Streetmix
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../../contributing/">Contributing</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../">Technical manual</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../../installing-streetmix/">Installing Streetmix</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../project/">Project organization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../csp/">Content Security Policy</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../">Tests</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="../">Frontend Tests</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Component Tests</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/">API testing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../integration/">Integration testing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../#unit-tests">Unit tests</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../#end-to-end-testing">End-to-end testing</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../#running-tests-locally">Running tests locally</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../#frameworks">Frameworks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../#continuous-integration-ci">Continuous integration (CI)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../#github-checks">GitHub checks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../#id5">Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../segment-definitions/">Segment definitions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../environs/">Environs definitions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../helpers/">Helpers and utilities</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../support/">Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../guidebook/">Guidebook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../contact/">Contact</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../">Streetmix</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../">Docs</a> &raquo;</li>
+        
+          <li><a href="../../../">Technical manual</a> &raquo;</li>
+        
+          <li><a href="../../">Tests</a> &raquo;</li>
+        
+          <li><a href="../">Frontend Tests</a> &raquo;</li>
+        
+      <li>Component Tests</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../../_sources/technical/tests/frontend/components.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="admonition attention">
+<p class="first admonition-title">Attention</p>
+<p class="last"><strong>(August 2021) Streetmix documentation has now moved!</strong> Please update your bookmarks to <a class="reference external" href="https://docs.streetmix.net/">https://docs.streetmix.net/</a>.</p>
+</div>
+<div class="section" id="component-tests">
+<h1>Component Tests<a class="headerlink" href="#component-tests" title="Permalink to this headline">¶</a></h1>
+<p>When it comes to testing React components, we need a way to test components in isolation without needing to mount the entire application. We use <a class="reference external" href="https://testing-library.com/docs/react-testing-library/intro">React Testing Library</a> (<a class="reference external" href="https://kentcdodds.com/blog/introducing-the-react-testing-library">more information</a>) to help us write tests.</p>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">Many of our React components use Redux and react-intl, which are required in the component’s context to render properly. If a component has either (or both) in its context, use the helper functions in <code class="file docutils literal notranslate"><span class="pre">./test/helpers/</span></code> which wrap React Testing Library’s <cite>render()</cite> with mock <code class="docutils literal notranslate"><span class="pre">&lt;Provider</span> <span class="pre">/&gt;</span></code> and <code class="docutils literal notranslate"><span class="pre">&lt;IntlProvider</span> <span class="pre">/&gt;</span></code> components.</p>
+</div>
+<div class="section" id="how-to-test-components">
+<h2>How to test components<a class="headerlink" href="#how-to-test-components" title="Permalink to this headline">¶</a></h2>
+<p>React Testing Library works directly with the rendered DOM. It provides utilities for querying the DOM in the same way the user would. Finding for elements by their label text (just like a user would), finding links and buttons from their text (like a user would).</p>
+<p>Test the interaction rather than the way it looks. For example use <code class="docutils literal notranslate"><span class="pre">fireAction</span></code> from React Testing Library to simulate Mouse and Keyboard events.</p>
+<p>Use the render method, be aware that you need to <code class="docutils literal notranslate"><span class="pre">wait</span></code> for changes when the store is used. Due to the asynchronous nature of the store.
+The helper method <code class="docutils literal notranslate"><span class="pre">render</span></code> provides you with a wrapper around <code class="docutils literal notranslate"><span class="pre">Provider</span></code> and you can provide <code class="docutils literal notranslate"><span class="pre">initialState</span></code>.</p>
+</div>
+<div class="section" id="snapshot-testing">
+<h2>Snapshot testing<a class="headerlink" href="#snapshot-testing" title="Permalink to this headline">¶</a></h2>
+<p>Snapshots should be used with caution. They tend to break, and developers tend to update them without examining why a snapshot might have changed unexpectedly.
+Please be careful when snapshots fail and when to add new ones.</p>
+<p>Snapshots are good when you test different results, like error messages. Take a look at <code class="file docutils literal notranslate"><span class="pre">./assets/scripts/app/__tests__/StreetEditable.test.js</span></code> for an example how snapshots can be used with error messages.</p>
+</div>
+<div class="section" id="mocks">
+<h2>Mocks<a class="headerlink" href="#mocks" title="Permalink to this headline">¶</a></h2>
+<p>Be aware of mocks. A few files and functions are mocked globally. For example <code class="docutils literal notranslate"><span class="pre">load_resources</span></code> is mocked globally and if you need to use that file in your tests/components be sure to check the mock.
+Otherwise use <code class="docutils literal notranslate"><span class="pre">jest.mock</span></code> to mock modules, classes, etc.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../api/" class="btn btn-neutral float-right" title="API testing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../" class="btn btn-neutral float-left" title="Frontend Tests" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Streetmix LLC
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

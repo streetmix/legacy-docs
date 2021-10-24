@@ -1,0 +1,266 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Technical guide &mdash; Streetmix  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/sphinx_prompt_css.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../genindex/" />
+    <link rel="search" title="Search" href="../../../search/" />
+    <link rel="next" title="Frequently asked questions" href="../faq/" />
+    <link rel="prev" title="New translator guide" href="../new-translator-guide/" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../" class="icon icon-home"> Streetmix
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../">Contributing</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../content-styleguide/">Content styleguide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../code/">Code contributions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation/">Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../illustrations/">Illustrations</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../">Translations</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../new-translator-guide/">New translator guide</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Technical guide</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#where-translations-live">Where translations live</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#adding-or-modifying-translatable-strings">Adding or modifying translatable strings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#previewing-translations">Previewing translations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#updating-locale-files">Updating locale files</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../faq/">Frequently asked questions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../ui/">User interface</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../technical/">Technical manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../support/">Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../guidebook/">Guidebook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../contact/">Contact</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../">Streetmix</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../">Docs</a> &raquo;</li>
+        
+          <li><a href="../../">Contributing</a> &raquo;</li>
+        
+          <li><a href="../">Translations</a> &raquo;</li>
+        
+      <li>Technical guide</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/contributing/translations/technical-guide.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="admonition attention">
+<p class="first admonition-title">Attention</p>
+<p class="last"><strong>(August 2021) Streetmix documentation has now moved!</strong> Please update your bookmarks to <a class="reference external" href="https://docs.streetmix.net/">https://docs.streetmix.net/</a>.</p>
+</div>
+<div class="section" id="technical-guide">
+<h1>Technical guide<a class="headerlink" href="#technical-guide" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="where-translations-live">
+<h2>Where translations live<a class="headerlink" href="#where-translations-live" title="Permalink to this headline">¶</a></h2>
+<p>The locale files are located in the <code class="file docutils literal notranslate"><span class="pre">assets/locales</span></code> folder, and each separated into sub-directories named by their locale code. These files are generated by an automated script. <strong>Do not manually edit locale files!</strong></p>
+</div>
+<div class="section" id="adding-or-modifying-translatable-strings">
+<h2>Adding or modifying translatable strings<a class="headerlink" href="#adding-or-modifying-translatable-strings" title="Permalink to this headline">¶</a></h2>
+<p>There is one exception to the above rule, and that’s the files in the <code class="file docutils literal notranslate"><span class="pre">assets/locales/en</span></code> folder. The English (US) translations are the source language for all translatable strings in Streetmix. This file can be manually modified as necessary to add, edit, or remote translatable strings from the application. Changes here will be automatically mirrored in Transifex within one day.</p>
+<p>When new strings are added, Transifex will make them available to be translated in all other languages.</p>
+<p>When strings are modified, Transifex will reset all languages to be the blank string, but will remember the history of previous strings.</p>
+<p>When strings are deleted, Transifex deletes that string from all locales, <em>including its history.</em> Deleting strings are extremely destructive and cannot be recovered. Therefore, be very careful when deleting strings. The danger of losing history usually means that even when a feature has been deprecated or removed, the translation strings will not be removed, out of an abundance of caution.</p>
+</div>
+<div class="section" id="previewing-translations">
+<h2>Previewing translations<a class="headerlink" href="#previewing-translations" title="Permalink to this headline">¶</a></h2>
+<p>Translators can preview translations from Transifex in instances of Streetmix where the <cite>TRANSIFEX_API_TOKEN</cite> environment variable is defined. When present, the strings for each language code are retrieved directly via the Transifex API. In this way, a translator can try different version of a translation in real time to see how it appears in Streetmix.</p>
+<p>If you are an in instance where you do not want live translations from Transifex, unset the <cite>TRANSIFEX_API_TOKEN</cite> environment variable.</p>
+</div>
+<div class="section" id="updating-locale-files">
+<h2>Updating locale files<a class="headerlink" href="#updating-locale-files" title="Permalink to this headline">¶</a></h2>
+<p>Periodically, we export a snapshot of the translated strings from Transifex and store them in our git repository. These locale files are used in production (and offline) deployments, which requires a more stable source of translation.</p>
+<p>You can update locale files by running this on the command line:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><style type="text/css">
+span.prompt1:before {
+  content: "$ ";
+}
+</style><span class="prompt1">node ./bin/download_translations.js</span>
+</pre></div></div><div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">A valid <code class="docutils literal notranslate"><span class="pre">TRANSIFEX_API_TOKEN</span></code> must be set in <a class="reference internal" href="../../../technical/installing-streetmix/#install-env-vars"><span class="std std-ref">environment variables</span></a> in order to retrieve translations. This environment variable can be obtained from the Transifex platform and it must correspond to a user who is a member of the Streetmix team.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../faq/" class="btn btn-neutral float-right" title="Frequently asked questions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../new-translator-guide/" class="btn btn-neutral float-left" title="New translator guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Streetmix LLC
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

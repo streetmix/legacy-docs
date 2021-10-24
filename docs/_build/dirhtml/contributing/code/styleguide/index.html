@@ -1,0 +1,356 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Code styleguide &mdash; Streetmix  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/sphinx_prompt_css.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../genindex/" />
+    <link rel="search" title="Search" href="../../../search/" />
+    <link rel="next" title="Documentation" href="../../documentation/" />
+    <link rel="prev" title="Code contributions" href="../" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../" class="icon icon-home"> Streetmix
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../">Contributing</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../content-styleguide/">Content styleguide</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../">Code contributions</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Code styleguide</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#code-style">Code style</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#code-comments">Code comments</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#commit-style">Commit style</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#other-stuff">Other stuff</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../#submitting-a-pull-request">Submitting a pull request</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation/">Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../illustrations/">Illustrations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../translations/">Translations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../ui/">User interface</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../technical/">Technical manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../support/">Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../guidebook/">Guidebook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../contact/">Contact</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../">Streetmix</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../">Docs</a> &raquo;</li>
+        
+          <li><a href="../../">Contributing</a> &raquo;</li>
+        
+          <li><a href="../">Code contributions</a> &raquo;</li>
+        
+      <li>Code styleguide</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/contributing/code/styleguide.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="admonition attention">
+<p class="first admonition-title">Attention</p>
+<p class="last"><strong>(August 2021) Streetmix documentation has now moved!</strong> Please update your bookmarks to <a class="reference external" href="https://docs.streetmix.net/">https://docs.streetmix.net/</a>.</p>
+</div>
+<div class="section" id="code-styleguide">
+<span id="id1"></span><h1>Code styleguide<a class="headerlink" href="#code-styleguide" title="Permalink to this headline">¶</a></h1>
+<p>You’ve heard it all before: code style should be consistent across a project, which helps readability and maintainability. We’ve done our best to automate formatting or linting of code to keep things consistent. However, we still need to set some guidelines and document some of our tooling and decision-making.</p>
+<p>The first thing you should know is: <em>two-space indents everywhere; no tabs.</em></p>
+<div class="section" id="code-style">
+<h2>Code style<a class="headerlink" href="#code-style" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="html">
+<h3>HTML<a class="headerlink" href="#html" title="Permalink to this headline">¶</a></h3>
+<p>We don’t have anything to lint HTML, so here are some basic guidelines:</p>
+<ul class="simple">
+<li>All elements and attributes should be lowercase.</li>
+<li>All quotation marks should be double quotes.</li>
+<li>We use <a class="reference external" href="https://handlebarsjs.com/">Handlebars</a> templating. In the past, we’ve tried using templating language that didn’t look like HTML, and, long story short, we won’t be doing that again.</li>
+<li>Comments can also be written in Handlebars so they don’t get sent to the client.</li>
+<li>Indent nested elements.</li>
+</ul>
+</div>
+<div class="section" id="css">
+<h3>CSS<a class="headerlink" href="#css" title="Permalink to this headline">¶</a></h3>
+<p>We use <a class="reference external" href="https://sass-lang.com/">Sass</a> in the SCSS flavor, which makes it easier to interoperate with standard CSS syntax. Code style is enforced with <a class="reference external" href="https://stylelint.io/">Stylelint</a>, using a combination of <a class="reference external" href="https://github.com/stylelint/stylelint-config-standard">stylelint-config-standard</a> and <a class="reference external" href="https://prettier.io/">Prettier</a> rules.</p>
+<p>SCSS files generally live adjacent to the components that they apply to, and will be imported by each component. SCSS files are not global, so variables and mixins need to be imported from other SCSS files. However, the compiled CSS will be global, not scoped to the component. <em>Don’t be afraid of the cascade!</em></p>
+<p>Avoid styling elements using <code class="docutils literal notranslate"><span class="pre">id</span></code> attribute selectors. Instead, use class names (alongside pseudo-selectors and attribute selectors, if necessary). Namespace all classnames. If there’s a component called <code class="docutils literal notranslate"><span class="pre">palette</span></code>, a good class name could be <code class="docutils literal notranslate"><span class="pre">palette-container</span></code>. Try to avoid writing generic class names like <code class="docutils literal notranslate"><span class="pre">large</span></code>. Because styles are not scoped, allowing generic class names without namespaces will inevitably cause collissions.</p>
+<div class="admonition-in-the-future admonition">
+<p class="first admonition-title">In the future…</p>
+<p class="last">We may make a stronger move toward <a class="reference external" href="https://tailwindcss.com/">Tailwind CSS</a>-style composition of utility classes instead of relying on Sass mixins, extends, or copy-pasting duplicate CSS code across class names. Generic class names will then be used for utility classes.</p>
+</div>
+<p>Although it’s popular, we do not use BEM framework/naming convention. Some good resources which have generally informed our approach to CSS organization (but have not dictated it) include <a class="reference external" href="http://smacss.com/">Scalable and Modular Architecture for CSS (SMACSS)</a> and parts of the <a class="reference external" href="https://rscss.io/">Reasonable System for CSS Stylesheet Structure (rscss)</a>.</p>
+</div>
+<div class="section" id="javascript">
+<h3>JavaScript<a class="headerlink" href="#javascript" title="Permalink to this headline">¶</a></h3>
+<p>Our JavaScript code style is <a class="reference external" href="https://standardjs.com/">Standard JS</a>. We enforce code style with a combination of <a class="reference external" href="https://prettier.io/">Prettier</a> and <a class="reference external" href="https://eslint.org/">ESLint</a>.</p>
+<a class="reference external image-reference" href="https://github.com/standard/standard"><img alt="JavaScript Standard code style badge" src="https://cdn.rawgit.com/standard/standard/master/badge.svg" /></a>
+<div class="section" id="import-order">
+<h4>Import order<a class="headerlink" href="#import-order" title="Permalink to this headline">¶</a></h4>
+<p>Generally, external dependencies are imported first, then relative imports local to the application. Developers familiar with <a class="reference external" href="https://www.python.org/dev/peps/pep-0008/#imports">Python’s PEP8 guidelines</a> will have seen this concept before.</p>
+<p>When importing relative files, files in the local directory (“closest” to the current module) are usually imported first. Files that come from the same subdirectories elsewhere are grouped together. When in doubt, alphabetical ordering within groups is better than no order at all.</p>
+<p>Here’s a rough order of imports:</p>
+<ul class="simple">
+<li>import <code class="docutils literal notranslate"><span class="pre">react</span></code></li>
+<li>import <code class="docutils literal notranslate"><span class="pre">prop-types</span></code></li>
+<li>import other React packages (usually related packages are grouped)</li>
+<li>import other dependencies (usually related packages are grouped)</li>
+<li>import constants</li>
+<li>import components</li>
+<li>import functions from non-component modules not covered elsewhere</li>
+<li>import Redux-related modules (e.g. action creators) last</li>
+<li>import CSS</li>
+</ul>
+<p>There’s no technical reason to order imports. (In the past, some modules may have created side-effects when they load, meaning that import order was significant. This should no longer be the case. If you come across one, consider this a bug which should be fixed ASAP.) We order imports to make it easier for a human to understand the dependency graph of a module.</p>
+</div>
+</div>
+<div class="section" id="react">
+<h3>React<a class="headerlink" href="#react" title="Permalink to this headline">¶</a></h3>
+<p>We extend the Standard JS ESLint rules with the <a class="reference external" href="https://github.com/standard/eslint-config-standard-react/">eslint-config-standard-react</a> package.</p>
+<div class="admonition attention">
+<p class="first admonition-title">Attention</p>
+<p class="last">We have only overridden one rule, <code class="docutils literal notranslate"><span class="pre">jsx-quotes</span></code> (<a class="reference external" href="https://eslint.org/docs/rules/jsx-quotes">link</a>), to prefer double quotation marks in JSX attributes. This is because, unlike regular JavaScript, double quotation marks are <em>more</em> typical in HTML, and this convention has carried over to JSX. You can see single quotes in JavaScript and double quotes for JSX attributes coexisting in <a class="reference external" href="https://reactjs.org/docs/introducing-jsx.html">React documentation</a>, and we believe developers expect this to be typical across the React ecosystem. This is a rare instance where we disagree with Standard JS’s rule.</p>
+</div>
+<div class="section" id="additional-guidelines">
+<h4>Additional guidelines<a class="headerlink" href="#additional-guidelines" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><strong>Prefer functional components.</strong>  We’ll let React developer Dan Abramov <a class="reference external" href="https://twitter.com/dan_abramov/status/993103559297204224">do the talking</a> (and <a class="reference external" href="https://overreacted.io/how-are-function-components-different-from-classes/">the writing</a>). Refactor existing class components to functional components only when it’s cheap to do so.</li>
+<li><strong>Lifecycle ordering.</strong>  Refer to <a class="reference external" href="https://github.com/airbnb/javascript/tree/master/react#ordering">the Airbnb JSX guide</a> for guidance.</li>
+<li><strong>State variable naming.</strong>  A variable that stores UI state as a boolean value should be named with the pattern <code class="docutils literal notranslate"><span class="pre">is[State]</span></code>. For instance, that’s <code class="docutils literal notranslate"><span class="pre">state.isVisible</span> <span class="pre">===</span> <span class="pre">true</span></code>, and not <code class="docutils literal notranslate"><span class="pre">state.visible</span> <span class="pre">===</span> <span class="pre">true</span></code> Or <code class="docutils literal notranslate"><span class="pre">state.isEditing</span></code>, not <code class="docutils literal notranslate"><span class="pre">state.editing</span></code>.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="code-comments">
+<h2>Code comments<a class="headerlink" href="#code-comments" title="Permalink to this headline">¶</a></h2>
+<p><strong>TODO:</strong> <a class="reference external" href="https://jsdoc.app/">JSDoc</a></p>
+</div>
+<div class="section" id="commit-style">
+<span id="code-commit-style"></span><h2>Commit style<a class="headerlink" href="#commit-style" title="Permalink to this headline">¶</a></h2>
+<p>We like the <a class="reference external" href="https://www.conventionalcommits.org/en/v1.0.0/#specification/">Conventional Commits specification</a>. This commit style helps us organize our changes into discrete commits by documenting them in a standard way, which helps us understand project history over time. (Previously, this is also known as <a class="reference external" href="https://seesparkbox.com/foundry/semantic_commit_messages">semantic commit messages</a> or the <a class="reference external" href="https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines">Angular commit style</a>.)</p>
+<p>While the Conventional Commits specification only defines the <code class="docutils literal notranslate"><span class="pre">feat</span></code> and <code class="docutils literal notranslate"><span class="pre">fix</span></code> types, we also use the following <strong>types</strong>:</p>
+<blockquote>
+<div><ul class="simple">
+<li><strong>chore</strong>: Changes to packages, configuration, external services such as CI (continuous integration) that do not affect the Streetmix application itself</li>
+<li><strong>docs</strong>: Changes to documentation contents</li>
+<li><strong>style</strong>: Changes to code style (white-space, formatting, etc)</li>
+<li><strong>test</strong>: Changes to tests</li>
+<li><strong>perf</strong>: Improvement to existing code that improves performance</li>
+<li><strong>revert</strong>: Reverts a previous change</li>
+<li><strong>refactor</strong>: All other improvements to existing code (and not <code class="docutils literal notranslate"><span class="pre">perf</span></code>, <code class="docutils literal notranslate"><span class="pre">fix</span></code>, or <code class="docutils literal notranslate"><span class="pre">feat</span></code>)</li>
+</ul>
+</div></blockquote>
+<p>A <strong>role</strong> can also be added optionally. For React components, the role is often the name of the component:</p>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">refactor</span><span class="p">(</span><span class="n">Avatar</span><span class="p">):</span> <span class="n">stop</span> <span class="n">using</span> <span class="n">internal</span> <span class="n">state</span>
+</pre></div>
+</div>
+<p>This is flexible and new types may be adopted over time. Sometimes a commit may seem to fall into one or more category. The first thing to consider is whether the commit is too large and should be split into smaller commits. If not, then pick which category seems most relevant. Make your own best judgment call here. Pull request reviews should not be held up on semantic debates of commit types, but a review should note if commit types are completely missing or very clearly used improperly.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">We use <a class="reference external" href="https://commitlint.js.org">commitlint</a> to automatically check your commit messages for validity. If they’re not valid, the check will fail. This check is hooked into each commit, and our CI test will also check your commit messages.</p>
+</div>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">If your development style is to make quick, small commits whenever you’ve made progress, there’s no need to change your development workflow right away to adopt the Conventional Commit style. You can always clean up the commit history on your branch when you’re ready to make a pull request. <a class="reference external" href="https://egghead.io/lessons/tools-practical-git-clean-up-commits-with-git-rebase">You can use git rebase to do this (tutorial)</a>.</p>
+</div>
+<div class="admonition-in-the-future admonition">
+<p class="first admonition-title">In the future…</p>
+<p class="last">…we may use commit messages to help with <a class="reference external" href="https://github.com/semantic-release/semantic-release">automated releases</a>.</p>
+</div>
+<div class="section" id="github-issues">
+<h3>GitHub issues<a class="headerlink" href="#github-issues" title="Permalink to this headline">¶</a></h3>
+<p>Whenever possible, use commit messages or commit comments to close automatically close GitHub issues. (This may also be done in pull requests.)</p>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">refactor</span><span class="p">(</span><span class="n">Avatar</span><span class="p">):</span> <span class="n">stop</span> <span class="n">using</span> <span class="n">internal</span> <span class="n">state</span><span class="p">,</span> <span class="n">resolves</span> <span class="c1">#1337</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="other-stuff">
+<h2>Other stuff<a class="headerlink" href="#other-stuff" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Keep code concise, but consider readability. Resist the urge to play <a class="reference external" href="https://en.wikipedia.org/wiki/Code_golf">code golf</a>.</li>
+<li>Avoid abbreviating variables. They should be readable.<ul>
+<li>It is acceptable to use single-letter variables as counters in loops (e.g. <code class="docutils literal notranslate"><span class="pre">i</span></code>).</li>
+<li>For event handlers, the variable name <code class="docutils literal notranslate"><span class="pre">event</span></code> is preferred, but sometimes you will see it abbreviated <code class="docutils literal notranslate"><span class="pre">e</span></code>, which is common in JavaScript. However, never use the abbreviated form if the event handling function is not in the context of the event listener. For instance, <code class="docutils literal notranslate"><span class="pre">window.addEventListener('click',</span> <span class="pre">(e)</span> <span class="pre">=&gt;</span> <span class="pre">{})</span></code> can be acceptable, but <code class="docutils literal notranslate"><span class="pre">export</span> <span class="pre">function</span> <span class="pre">doSomething</span> <span class="pre">(e)</span> <span class="pre">{}</span></code> is not immediately clear that the function should only be used as an event handler.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../documentation/" class="btn btn-neutral float-right" title="Documentation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../" class="btn btn-neutral float-left" title="Code contributions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Streetmix LLC
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

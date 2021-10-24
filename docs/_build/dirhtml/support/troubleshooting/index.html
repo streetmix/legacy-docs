@@ -1,0 +1,317 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Troubleshooting &mdash; Streetmix  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/sphinx_prompt_css.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" />
+    <link rel="next" title="Report a bug" href="../bug-report/" />
+    <link rel="prev" title="Frequently asked questions" href="../faq/" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../" class="icon icon-home"> Streetmix
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../contributing/">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../technical/">Technical manual</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../">Support</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../faq/">Frequently asked questions</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Troubleshooting</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#loading-or-authentication-issues">Loading or authentication issues</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#when-loading-streetmix-the-screen-is-stuck-on-the-loading-spinner-indefinitely-or-i-only-see-the-were-having-trouble-loading-streetmix-error-rm1-error-message">When loading Streetmix, the screen is stuck on the loading spinner indefinitely, or I only see the “We’re having trouble loading Streetmix. (Error RM1)” error message.</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#when-following-an-e-mail-sign-in-link-i-see-the-you-cancelled-the-sign-in-process-message">When following an e-mail sign-in link, I see the “You cancelled the sign-in process” message.</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#error-codes">Error codes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#development-issues">Development issues</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#strategies-for-resolving-most-common-issues">Strategies for resolving most common issues</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#specific-issues">Specific issues</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../bug-report/">Report a bug</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../guidebook/">Guidebook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contact/">Contact</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">Streetmix</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../">Docs</a> &raquo;</li>
+        
+          <li><a href="../">Support</a> &raquo;</li>
+        
+      <li>Troubleshooting</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/support/troubleshooting.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="admonition attention">
+<p class="first admonition-title">Attention</p>
+<p class="last"><strong>(August 2021) Streetmix documentation has now moved!</strong> Please update your bookmarks to <a class="reference external" href="https://docs.streetmix.net/">https://docs.streetmix.net/</a>.</p>
+</div>
+<div class="section" id="troubleshooting">
+<h1>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="loading-or-authentication-issues">
+<h2>Loading or authentication issues<a class="headerlink" href="#loading-or-authentication-issues" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="when-loading-streetmix-the-screen-is-stuck-on-the-loading-spinner-indefinitely-or-i-only-see-the-were-having-trouble-loading-streetmix-error-rm1-error-message">
+<h3>When loading Streetmix, the screen is stuck on the loading spinner indefinitely, or I only see the “We’re having trouble loading Streetmix. (Error RM1)” error message.<a class="headerlink" href="#when-loading-streetmix-the-screen-is-stuck-on-the-loading-spinner-indefinitely-or-i-only-see-the-were-having-trouble-loading-streetmix-error-rm1-error-message" title="Permalink to this headline">¶</a></h3>
+<p>If Streetmix is stuck on the initial loading spinner screen, try to open a “private mode” window in your browser. Normally, this mode is used to prevent browsers from saving history, and it also means you can start with a “clean slate” when browsing the web. Here are resources for the two most common browsers.</p>
+<ul class="simple">
+<li><a class="reference external" href="https://support.google.com/chrome/answer/95464">How to browse in Incognito mode in Chrome</a></li>
+<li><a class="reference external" href="https://support.mozilla.org/en-US/kb/private-browsing-use-firefox-without-history">How to enter Private Browsing in Firefox</a></li>
+</ul>
+<p>If Streetmix works in private mode, this means something in your browser cache has become corrupted. You will want to reset your browser back to a “clean slate.”</p>
+<ul class="simple">
+<li><a class="reference external" href="https://support.google.com/chrome/answer/2392709">How to clear browsing data in Chrome</a></li>
+<li><a class="reference external" href="https://support.mozilla.org/en-US/kb/clear-cookies-and-site-data-firefox#w_clear-cookies-for-the-current-website">How to clear cookies and site data in Firefox</a></li>
+</ul>
+<p>If Streetmix does not work in private mode, or still does not work after clearing your browser’s cache, please ensure that you are using the latest version of Chrome or Firefox. If you still need help, please <a class="reference internal" href="../../contact/#contact"><span class="std std-ref">contact us</span></a>.</p>
+</div>
+<div class="section" id="when-following-an-e-mail-sign-in-link-i-see-the-you-cancelled-the-sign-in-process-message">
+<h3>When following an e-mail sign-in link, I see the “You cancelled the sign-in process” message.<a class="headerlink" href="#when-following-an-e-mail-sign-in-link-i-see-the-you-cancelled-the-sign-in-process-message" title="Permalink to this headline">¶</a></h3>
+<p>This can happen when an organization-managed e-mail service blocks or tampers with the sign-in link while doing routine security checks. We are currently investigating solutions to this problem but do not yet have a timeline for a fix. The following workarounds can help:</p>
+<ul class="simple">
+<li>Sign in with a personal e-mail address (e.g. Gmail) or with a Twitter, Facebook or Google account method.</li>
+<li>Ask your organization’s IT administrators to allow sign-in emails from Streetmix.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="error-codes">
+<h2>Error codes<a class="headerlink" href="#error-codes" title="Permalink to this headline">¶</a></h2>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">This section is a work in progress.</p>
+</div>
+<p>These are error codes that may occur while using Streetmix.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="17%" />
+<col width="41%" />
+<col width="41%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Error code</th>
+<th class="head">Reason</th>
+<th class="head">Suggested fix</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>9B</strong></td>
+<td><strong>Data error</strong>: The server
+sent street data that had
+no data in it.</td>
+<td>Load a different street.</td>
+</tr>
+<tr class="row-odd"><td><strong>RM1</strong></td>
+<td><strong>Authentication error</strong>:
+The user attempted to load
+Streetmix with remembered
+credentials which have
+become corrupted.</td>
+<td>Reset cache and site data for
+the site.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="development-issues">
+<span id="troubleshooting-development-issues"></span><h2>Development issues<a class="headerlink" href="#development-issues" title="Permalink to this headline">¶</a></h2>
+<p>While developing Streetmix, here are solutions to some problems that may arise.</p>
+<div class="section" id="strategies-for-resolving-most-common-issues">
+<h3>Strategies for resolving most common issues<a class="headerlink" href="#strategies-for-resolving-most-common-issues" title="Permalink to this headline">¶</a></h3>
+<p>Check which version of Node.js you are using and make sure it matches the versions listed in <code class="docutils literal notranslate"><span class="pre">package.json</span></code>.</p>
+<p>If you’re still running into problems, <strong>try this first!</strong>:</p>
+<ul class="simple">
+<li>Update your global <code class="docutils literal notranslate"><span class="pre">node</span></code> and <code class="docutils literal notranslate"><span class="pre">npm</span></code> versions to the latest versions.</li>
+<li>Remove the <code class="file docutils literal notranslate"><span class="pre">node_modules</span></code> and <code class="file docutils literal notranslate"><span class="pre">.cache</span></code> folders, if present, and reinstall (<a class="reference internal" href="../../technical/installing-streetmix/#install-streetmix"><span class="std std-ref">Installing Streetmix</span></a>).</li>
+<li>Ensure that you are installing and running Streetmix with <code class="docutils literal notranslate"><span class="pre">npm</span></code>, not <code class="docutils literal notranslate"><span class="pre">yarn</span></code>.</li>
+</ul>
+</div>
+<div class="section" id="specific-issues">
+<h3>Specific issues<a class="headerlink" href="#specific-issues" title="Permalink to this headline">¶</a></h3>
+<p>This section is for troubleshooting specific issues.</p>
+<ul class="simple">
+<li><strong>The server keeps restarting in a loop</strong> with the <code class="docutils literal notranslate"><span class="pre">EADDRINUSE</span></code> error code. We have documented a solution in <a class="reference external" href="https://github.com/streetmix/streetmix/issues/983">GitHub issue #983</a>.</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../bug-report/" class="btn btn-neutral float-right" title="Report a bug" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../faq/" class="btn btn-neutral float-left" title="Frequently asked questions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Streetmix LLC
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

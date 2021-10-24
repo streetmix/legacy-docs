@@ -1,0 +1,261 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Project organization &mdash; Streetmix  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/sphinx_prompt_css.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" />
+    <link rel="next" title="Content Security Policy" href="../csp/" />
+    <link rel="prev" title="Installing Streetmix" href="../installing-streetmix/" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../" class="icon icon-home"> Streetmix
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../contributing/">Contributing</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../">Technical manual</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../installing-streetmix/">Installing Streetmix</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Project organization</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#dependency-pinning">Dependency pinning</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser-support">Browser support</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../csp/">Content Security Policy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tests/">Tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../segment-definitions/">Segment definitions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../environs/">Environs definitions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../helpers/">Helpers and utilities</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../support/">Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../guidebook/">Guidebook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contact/">Contact</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">Streetmix</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../">Docs</a> &raquo;</li>
+        
+          <li><a href="../">Technical manual</a> &raquo;</li>
+        
+      <li>Project organization</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/technical/project.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="admonition attention">
+<p class="first admonition-title">Attention</p>
+<p class="last"><strong>(August 2021) Streetmix documentation has now moved!</strong> Please update your bookmarks to <a class="reference external" href="https://docs.streetmix.net/">https://docs.streetmix.net/</a>.</p>
+</div>
+<div class="section" id="project-organization">
+<h1>Project organization<a class="headerlink" href="#project-organization" title="Permalink to this headline">¶</a></h1>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">This page is a work in progress.</p>
+</div>
+<p>Streetmix is a Node.js and JavaScript project. We use the following frameworks:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://expressjs.com/">Express</a>, a web application framework. This is basically the server side of Streetmix. It handles HTTP requests and serves files and data requested by the front end.</li>
+<li><a class="reference external" href="https://www.postgresql.org/">PostgreSQL</a>, a relational database. All the data on the server is stored in PostgreSQL.</li>
+<li><a class="reference external" href="https://postgis.net/">PostGIS</a>, PostGIS is a spatial database extender for PostgreSQL, adding support for geographic objects.</li>
+<li><a class="reference external" href="https://parceljs.org/">Parcel</a>, a web application bundler. When Streetmix starts, it uses Parcel to bundle all the front end JavaScript and CSS.</li>
+<li><a class="reference external" href="https://babeljs.io/">Babel</a>, a compiler which allows us to use modern JavaScript in browsers that do not yet support it.</li>
+<li><a class="reference external" href="https://reactjs.org/">React</a>, a front-end user interface framework. Most UI is rendered with React.</li>
+<li><a class="reference external" href="https://redux.js.org/">Redux</a> (with <a class="reference external" href="https://redux-toolkit.js.org/">Redux Toolkit</a>), a state management framework that usually works alongside React. We maintain most application state in Redux, using Redux Toolkit to help make it easier to write code for Redux.</li>
+<li><a class="reference external" href="https://sass-lang.com/">SCSS</a>, an extension of CSS that allows us to use variables and calculate values.</li>
+<li><a class="reference external" href="https://postcss.org/">PostCSS</a>, a CSS processor. We primarily use it to autoprefix certain CSS properties.</li>
+</ul>
+<div class="section" id="dependency-pinning">
+<h2>Dependency pinning<a class="headerlink" href="#dependency-pinning" title="Permalink to this headline">¶</a></h2>
+<p>We <strong>pin</strong> our dependencies, which means that we specify exact dependency versions, not <a class="reference external" href="https://semver.org/">version ranges</a>, in <code class="docutils literal notranslate"><span class="pre">package.json</span></code>. This allows Streetmix to run with the greatest reliability and consistency across different computing environments.</p>
+<p>Because Streetmix is an application, and it’s not intended to be imported by other applications, we don’t need the flexibility that comes from using version ranges. As a result, all developers, and any deployment environments, are running the same code for any given commit. This consistency makes obscure bugs easier to track down and resolve.</p>
+<p>The tradeoff is that this introduces “upgrade noise”. We are currently using <a class="reference external" href="https://greenkeeper.io/">Greenkeeper</a>, a third-party automated service to create pull requests whenever a dependency has updated. Because we have pinned dependencies, Greenkeeper creates a new branch and opens a new pull request for <em>every</em> depedency update, no matter how minor. We’re willing to accept this tradeoff for the time being, although we’re open to considering any strategy to limit the noise.</p>
+<p><strong>References</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference external" href="https://renovatebot.com/docs/dependency-pinning/">Should you Pin your Javascript Dependencies?</a> <em>[Renovate Docs]</em></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="browser-support">
+<h2>Browser support<a class="headerlink" href="#browser-support" title="Permalink to this headline">¶</a></h2>
+<p>Because of limited resources, browser support is any of the evergreen desktop browsers (e.g. Firefox, Chrome, Safari, and Edge). We do not support Internet Explorer. (See <a class="reference internal" href="../../support/faq/#faq-internet-explorer"><span class="std std-ref">Does Streetmix support Internet Explorer?</span></a>)</p>
+<p>Mobile support is also limited, because the application was not initially designed for mobile. However, we should be supporting tablet devices such as iPads and laptops with touchscreens.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../csp/" class="btn btn-neutral float-right" title="Content Security Policy" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../installing-streetmix/" class="btn btn-neutral float-left" title="Installing Streetmix" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Streetmix LLC
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

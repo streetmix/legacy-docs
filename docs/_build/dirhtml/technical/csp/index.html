@@ -1,0 +1,248 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Content Security Policy &mdash; Streetmix  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/sphinx_prompt_css.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" />
+    <link rel="next" title="Tests" href="../tests/" />
+    <link rel="prev" title="Project organization" href="../project/" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../" class="icon icon-home"> Streetmix
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../contributing/">Contributing</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../">Technical manual</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../installing-streetmix/">Installing Streetmix</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../project/">Project organization</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Content Security Policy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tests/">Tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../segment-definitions/">Segment definitions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../environs/">Environs definitions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../helpers/">Helpers and utilities</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../support/">Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../guidebook/">Guidebook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contact/">Contact</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">Streetmix</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../">Docs</a> &raquo;</li>
+        
+          <li><a href="../">Technical manual</a> &raquo;</li>
+        
+      <li>Content Security Policy</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/technical/csp.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="admonition attention">
+<p class="first admonition-title">Attention</p>
+<p class="last"><strong>(August 2021) Streetmix documentation has now moved!</strong> Please update your bookmarks to <a class="reference external" href="https://docs.streetmix.net/">https://docs.streetmix.net/</a>.</p>
+</div>
+<div class="section" id="content-security-policy">
+<h1>Content Security Policy<a class="headerlink" href="#content-security-policy" title="Permalink to this headline">¶</a></h1>
+<p>Streetmix adopts a <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP">Content Security Policy (CSP)</a>, which permits only approved content to appear or run on the application. The intent is to mitigate certain types of malicious attacks, like <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Glossary/Cross-site_scripting">cross-site scripting (XSS)</a> and data injection attacks. As we become a bigger platform, with user accounts and access to user data, it’s important we adopt good security practices, and CSP is a web standard that is within our reach.</p>
+<p>However, CSP can also be quite limiting. Third-party service integrations, cloud-hosted assets like fonts and images, and browser plugins can break, if they’re not explicitly whitelisted. Currently, our CSP directives are very strict.</p>
+<p>This section details more information about the way we implement CSP.</p>
+<ul class="simple">
+<li><strong>CSP directives are sent in HTTP headers.</strong> This is the most secure way to set a CSP directive. We use <a class="reference external" href="https://www.npmjs.com/package/helmet">helmet</a> to help write the directive string. This is set up when the Express server is starting.</li>
+<li><strong>We write the most restrictive directive we can.</strong> Currently we avoid allowing “any” content of any type, if possible.</li>
+<li><strong>Inline scripts require a nonce value.</strong> Since arbitrary inline scripts are not allowed, we “approve” inline scripts <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/script-src#Unsafe_inline_script">by giving them a unique ID</a>. A nonce value can be anything, but our recommendation is to generate a <code class="code docutils literal notranslate"><span class="pre">uuid</span></code>, and make it available to both the CSP definition, and the HTML templates which can then inject the nonce as a variable.<ul>
+<li>Note: we avoid using SHA hashes, which is an alternative way to allow inline scripts. We don’t have a way to automatically generate them, so if they’re manually generated and added to a CSP header, any change to the inline script, including whitespace formatting, can break the allow directive. They’re brittle, so we don’t use them.</li>
+</ul>
+</li>
+<li><strong>CSP violations are blocked in production, but allowed in development.</strong> While blocking unknown scripts and assets help secure the production deployment, this can be annoying in development environments, where new scripts and assets may be implemented or experimented with. So resources that trigger a CSP violation is allowed when the <code class="code docutils literal notranslate"><span class="pre">NODE_ENV</span></code> environment variable is set to <code class="code docutils literal notranslate"><span class="pre">development</span></code>. CSP violations are logged to console, so please keep an eye on the console output, which can tell you what directives you will need to update to make new or updated code work in the production environment.<ul>
+<li>Note: Another reason why CSP is relaxed in development (violations are allowed, but reported) is because developer extensions, such as the React or Redux inspectors, are disabled in Firefox if CSP is too strict.</li>
+</ul>
+</li>
+<li><strong>CSP violations are reported to the /services/csp-report endpoint.</strong> All reports are logged, in both production and development environments. Some CSP violations are expected, and can be safely ignored. (We don’t list the expected CSP violations here because this documentation inevitbably lags behind changes in the codebase. You will begin to recognize expected violations as you become familiar with local development.) Remember, in development mode, resources that are allowed can still trigger a CSP violation report. Please remember to update the CSP directive if they are intended for production.<ul>
+<li>Note: we do not have automated testing for CSP violations. In other words, continuous integration cannot catch if new or changed code will trigger a violation or issue a report. Do not depend on automated testing to catch CSP violations for you.</li>
+<li>We log all reports in production so that we can see if users are doing anything that we should be adding to the CSP directive. (For instance: user profile images are hosted on a wide variety of cloud-based cache servers, and we still need to decide whether to allow each of these servers manually, or allow all image resources more liberally.)</li>
+</ul>
+</li>
+<li><strong>Avoid writing separate CSP headers for development versus production environments.</strong> We have tried this in the past, and have seen instances where something that “just worked” in development mysteriously stopped working in production, because the CSP headers were different. This “ease of development” strategy became a footgun that made CSP feel worse. This is why we use the strategy of sending CSP headers even in development, and reporting all violations, so that we can catch problems earlier.<ul>
+<li>The one exception we make for development is to allow websockets for Parcel’s hot reloader. This is considered acceptable because the hot reloader will never be present in production.</li>
+</ul>
+</li>
+</ul>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../tests/" class="btn btn-neutral float-right" title="Tests" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../project/" class="btn btn-neutral float-left" title="Project organization" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Streetmix LLC
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

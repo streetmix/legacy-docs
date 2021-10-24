@@ -1,0 +1,364 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Environs definitions &mdash; Streetmix  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/sphinx_prompt_css.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" />
+    <link rel="next" title="Helpers and utilities" href="../helpers/" />
+    <link rel="prev" title="Segment definitions" href="../segment-definitions/" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../" class="icon icon-home"> Streetmix
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../contributing/">Contributing</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../">Technical manual</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../installing-streetmix/">Installing Streetmix</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../project/">Project organization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../csp/">Content Security Policy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tests/">Tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../segment-definitions/">Segment definitions</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Environs definitions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#environs-json-schema">environs.json schema</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../helpers/">Helpers and utilities</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../support/">Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../guidebook/">Guidebook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contact/">Contact</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">Streetmix</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../">Docs</a> &raquo;</li>
+        
+          <li><a href="../">Technical manual</a> &raquo;</li>
+        
+      <li>Environs definitions</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/technical/environs.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="admonition attention">
+<p class="first admonition-title">Attention</p>
+<p class="last"><strong>(August 2021) Streetmix documentation has now moved!</strong> Please update your bookmarks to <a class="reference external" href="https://docs.streetmix.net/">https://docs.streetmix.net/</a>.</p>
+</div>
+<div class="section" id="environs-definitions">
+<h1>Environs definitions<a class="headerlink" href="#environs-definitions" title="Permalink to this headline">¶</a></h1>
+<div class="admonition attention">
+<p class="first admonition-title">Attention</p>
+<p class="last">This page is a work in progress. This is a draft specification of Streetmix’s forthcoming environs feature. The schema and structure described here is subject to change.</p>
+</div>
+<p><strong>Environs</strong> is a setting that allows uers to change the “environment” that a street is in, which can include elements like time of day, weather, and background. In the UI, we prefer to use the term <em>environment</em>. Internally, we use <em>environs</em> to prevent confusion with the computing term <em>developer environment</em>.</p>
+<p>Environs definitions are contained in <code class="file docutils literal notranslate"><span class="pre">environs.json</span></code>. You can browse the <a class="reference external" href="https://github.com/streetmix/streetmix/blob/main/assets/scripts/streets/environs.json">current environs definitions here</a>.</p>
+<div class="section" id="environs-json-schema">
+<h2>environs.json schema<a class="headerlink" href="#environs-json-schema" title="Permalink to this headline">¶</a></h2>
+<p>The definitions file exports a single JavaScript object, containing a keyed collection of environs definitions. The key is the identifier for the environs, and the value is an object with the following properties:</p>
+<dl class="docutils">
+<dt><code class="docutils literal notranslate"><span class="pre">name</span></code></dt>
+<dd><p class="first"><strong>Required.</strong> A string that is the English-locale display name for the environs. <em>Note: we have not yet determined a method for retrieving translated names in other locales.</em></p>
+<div class="last highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;name&quot;</span><span class="o">:</span> <span class="s2">&quot;Night&quot;</span>
+</pre></div>
+</div>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">enabled</span></code></dt>
+<dd><p class="first"><strong>Optional.</strong> A boolean value, which determines whether the environs is available for the user to choose.  If this property is not set, its default value is <code class="docutils literal notranslate"><span class="pre">true</span></code>. If set to <code class="docutils literal notranslate"><span class="pre">false</span></code>, the environs will not be accessible in the UI. However, streets that have already been set to a disabled environs may still render that environs.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;enabled&quot;</span><span class="o">:</span> <span class="kc">false</span>
+</pre></div>
+</div>
+<div class="last admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">We use <code class="docutils literal notranslate"><span class="pre">enabled</span></code> as the property name instead of <code class="docutils literal notranslate"><span class="pre">disabled</span></code> because code such as <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">(environs.enabled)</span></code> is easier to read than <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">(!environs.disabled)</span></code>, which uses a double negative. It is also easier to use read and use filters in this way.</p>
+</div>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">iconImage</span></code></dt>
+<dd><p class="first"><strong>Optional</strong>. A string that refers to a custom icon image to be used when displaying a graphic icon for the environs. The image is retrieved from the application’s image cache. If this property is not defined, no custom image will be displayed.</p>
+<div class="last highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;iconImage&quot;</span><span class="o">:</span> <span class="s2">&quot;environs--icon-night&quot;</span>
+</pre></div>
+</div>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">backgroundImage</span></code></dt>
+<dd><p class="first"><strong>Optional</strong>. A string that refers to an image that is displayed in the background of the street. The image is retrieved from the application’s image cache. If this property is not defined, no background image will be displayed. Background images display at 1:1 pixel scale and will be tiled to repeat in all directions.</p>
+<div class="last highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;backgroundImage&quot;</span><span class="o">:</span> <span class="s2">&quot;sky--stars&quot;</span>
+</pre></div>
+</div>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">backgroundGradient</span></code></dt>
+<dd><p class="first"><strong>Optional</strong>. An array of CSS colors that create a linear gradient corresponding to the <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Images/Using_CSS_gradients">CSS gradients</a> specification. Linear gradients specified in this way will always be rendered top-to-bottom.</p>
+<p>Each item in the array may be a string that is a CSS color:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;backgroundGradient&quot;</span><span class="o">:</span> <span class="p">[</span>
+  <span class="s2">&quot;#01051600&quot;</span><span class="p">,</span> <span class="s2">&quot;#01081777&quot;</span><span class="p">,</span> <span class="s2">&quot;#031641&quot;</span><span class="p">,</span> <span class="s2">&quot;#061c45&quot;</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p>…or, each item may be an array, where the first item is the CSS color string and the second item is a stop value:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;backgroundGradient&quot;</span><span class="o">:</span> <span class="p">[</span>
+  <span class="p">[</span><span class="s2">&quot;#01051600&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+  <span class="p">[</span><span class="s2">&quot;#01081777&quot;</span><span class="p">,</span> <span class="mf">0.33</span><span class="p">],</span>
+  <span class="p">[</span><span class="s2">&quot;#031641&quot;</span><span class="p">,</span> <span class="mf">0.66</span><span class="p">],</span>
+  <span class="p">[</span><span class="s2">&quot;#061c45&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p>Mixing and matching item types is permitted. Array items can optionally omit the second item (the stop value). If a stop value is not provided, the transition between each step will be interpolated by the browser.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;backgroundGradient&quot;</span><span class="o">:</span> <span class="p">[</span>
+  <span class="p">[</span><span class="s2">&quot;#01051600&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+  <span class="p">[</span><span class="s2">&quot;#01081777&quot;</span><span class="p">],</span>
+  <span class="s2">&quot;#031641&quot;</span><span class="p">,</span>
+  <span class="p">[</span><span class="s2">&quot;#061c45&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p>Any <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/CSS/color">valid CSS value</a> is permitted, including RGBA definitions and keywords.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;backgroundGradient&quot;</span><span class="o">:</span> <span class="p">[</span>
+  <span class="p">[</span><span class="s2">&quot;rgba(255,255,255,0.85)&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+  <span class="p">[</span><span class="s2">&quot;rgba(192,192,192,0.5)&quot;</span><span class="p">,</span> <span class="mf">0.85</span><span class="p">],</span>
+  <span class="p">[</span><span class="s2">&quot;transparent&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p class="last">If the gradient has any transparency, the <code class="docutils literal notranslate"><span class="pre">backgroundColor</span></code> property, if defined, will be underneath the transparent colors. If <code class="docutils literal notranslate"><span class="pre">backgroundColor</span></code> is not defined, the underlying color will be the page background. We do not recommend relying on the page background as the underlying color.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">backgroundColor</span></code></dt>
+<dd><p class="first"><strong>Optional</strong>. A string of a CSS color which is a solid background color. We always recommend setting a background color, even if a non-transparent background gradient or a background image is specified, which allows it to be used as a fallback color, just in case.</p>
+<div class="last highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;backgroundColor&quot;</span><span class="o">:</span> <span class="s2">&quot;#000928&quot;</span>
+</pre></div>
+</div>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">backgroundObjects</span></code></dt>
+<dd><p class="first"><strong>Optional</strong>. An array of objects, defining images to be displayed in the background. Each object has five required properties:</p>
+<dl class="docutils">
+<dt><code class="docutils literal notranslate"><span class="pre">image</span></code></dt>
+<dd>A string, referring to an image in the application image cache.</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">width</span></code></dt>
+<dd>A number, specifying in CSS pixels the width to display the image.</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">height</span></code></dt>
+<dd>A number, specifying in CSS pixels the height to display the image.</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">top</span></code></dt>
+<dd>A number between 0 and 1, specifying the relative vertical position of the image in the background. A value of 0 is at the top of the background, and a value of 1 is at the bottom.</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">left</span></code></dt>
+<dd>A number between 0 and 1, specifying the relative horizontal position of the image in the background. A value of 0 is at the left side of the background, and a value of 1 is at the right.</dd>
+</dl>
+<p>Images that cannot be retrieved from the cache will not be displayed.</p>
+<div class="last highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;backgroundObjects&quot;</span><span class="o">:</span> <span class="p">[</span>
+  <span class="p">{</span>
+    <span class="s2">&quot;image&quot;</span><span class="o">:</span> <span class="s2">&quot;sky--moon&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;width&quot;</span><span class="o">:</span> <span class="mi">116</span><span class="p">,</span>
+    <span class="s2">&quot;height&quot;</span><span class="o">:</span> <span class="mi">116</span><span class="p">,</span>
+    <span class="s2">&quot;top&quot;</span><span class="o">:</span> <span class="mf">0.2</span><span class="p">,</span>
+    <span class="s2">&quot;left&quot;</span><span class="o">:</span> <span class="mf">0.8</span>
+  <span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">foregroundGradient</span></code></dt>
+<dd><p class="first"><strong>Optional.</strong> This works exactly the same as <code class="docutils literal notranslate"><span class="pre">backgroundGradient</span></code> (see above), but creates a gradient that overlays street elements, such as buildings and vehicles. We recommend setting <code class="docutils literal notranslate"><span class="pre">transparent</span></code> as the final value so that the overlay fades away smoothly.</p>
+<div class="last highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;foregroundGradient&quot;</span><span class="o">:</span> <span class="p">[</span>
+  <span class="p">[</span><span class="s2">&quot;rgba(255,255,255,0.85)&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+  <span class="p">[</span><span class="s2">&quot;rgba(192,192,192,0.5)&quot;</span><span class="p">,</span> <span class="mf">0.85</span><span class="p">],</span>
+  <span class="p">[</span><span class="s2">&quot;transparent&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">cloudOpacity</span></code></dt>
+<dd><p class="first"><strong>Optional</strong>. A number between 0 and 1, specifying the opacity of the clouds that are normally displayed in the background. The default value is 1. A value of 0 will make the clouds invisible.</p>
+<div class="last highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;cloudOpacity&quot;</span><span class="o">:</span> <span class="mf">0.2</span>
+</pre></div>
+</div>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">invertUITextColor</span></code></dt>
+<dd><p class="first"><strong>Optional.</strong> A boolean value, which if <code class="docutils literal notranslate"><span class="pre">true</span></code>, will invert the color of any text that exists on top of the background. The exact implementation of color inversion may differ between UI components. Please set this to true if you have a dark-colored background, and choose the value that creates the best contrast according to <a class="reference external" href="https://contrast-ratio.com">WCAG 2.0 guidelines on contrast ratio</a>. Also, please be aware the viewport heights differ between devices, and that backgrounds will be “compressed” to fit the vertical height of the viewport. Backgrounds that change from light to dark (so that contrast ratio varies greatly depending on the viewport size) is not recommended.</p>
+<div class="last highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;invertUITextColor&quot;</span><span class="o">:</span> <span class="kc">true</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+<p>All other properties are ignored. However, additional properties may be defined in the future. We recommend using undefined properties as comments and prefixing comment properties with <code class="docutils literal notranslate"><span class="pre">_comment</span></code>, for example:</p>
+<blockquote>
+<div><div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;_commentBackgroundColor&quot;</span><span class="o">:</span> <span class="s2">&quot;This is a comment about the background color.&quot;</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../helpers/" class="btn btn-neutral float-right" title="Helpers and utilities" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../segment-definitions/" class="btn btn-neutral float-left" title="Segment definitions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Streetmix LLC
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
